@@ -20,10 +20,16 @@ var $colorOptions = $('#color option');
 //console.log($colorOptions);
 
 $updateDesign.on('change', function(event){
-    $updateDesignOptions.each(function(i, element){
-        if ($(event.target).val() === 'js-puns'){
-
-        }
+    //$updateDesignOptions.each(function(i, element){
+        if ($(event.target).val() === 'js puns'){
+                $("colorOptions:contains('shirt')").hide();
+                $("colorOptions:contains('JS Puns')").show();
+        } else {
+                if ($(event.target).val() === 'heart js') {
+                    $("colorOptions:contains('shirt')").show();
+                    $("colorOptions:contains('JS Puns')").hide();
+                }
+       // }
 
 
 
