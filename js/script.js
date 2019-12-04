@@ -22,12 +22,12 @@ var $colorOptions = $('#color option');
 $updateDesign.on('change', function(event){
     //$updateDesignOptions.each(function(i, element){
         if ($(event.target).val() === 'js puns'){
-                $("colorOptions:contains('shirt')").hide();
-                $("colorOptions:contains('JS Puns')").show();
+                $("colorOptions:contains('JS shirt only')").hide();
+                $("colorOptions:contains('JS Puns shirt only')").show();
         } else {
                 if ($(event.target).val() === 'heart js') {
-                    $("colorOptions:contains('shirt')").show();
-                    $("colorOptions:contains('JS Puns')").hide();
+                    $("colorOptions:contains('JS shirt only')").show();
+                    $("colorOptions:contains('JS Puns shirt only')").hide();
                 }
        // }
 
@@ -42,7 +42,7 @@ $updateDesign.on('change', function(event){
 
 
 
-})
+});
 
 
 
